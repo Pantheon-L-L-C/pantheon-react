@@ -3,12 +3,21 @@ import logo from './logo.svg';
 import './App.css';
 
 import Nav from './Nav';
-import Pantheon from './Pantheon';
+import Hero from './Hero';
+import Ethos from './Ethos';
+import Team from './Team';
+import Faq from './Faq';
+import WhitelistInfo from './WhitelistInfo';
 
 function App() {
   return (
     <div>
       <Nav/>
+      <Hero/>
+      <Ethos/>
+      <Team/>
+      <Faq/>
+      <WhitelistInfo/>
     </div>
   );
 }

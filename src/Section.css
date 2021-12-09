@@ -1,0 +1,56 @@
+/* Navbar */
+.nav {
+  border-style: none none solid none;
+  border-width: 1px;
+  border-color: white;
+}
+
+/* Sections */
+.section {
+  width: 100vw;
+  padding-bottom: 5vh;
+}
+
+.section > h1 {
+  font-family: "Avenir Next", Sans-Serif;
+}
+
+.section.cream {
+  background-color: #DBC17F;
+  color: #825B5A;
+}
+
+.section.gray {
+  background-color: #5D5A68;
+  color: #DBC17F;
+}
+
+.section.red {
+  background-color: #825B5A;
+  color: #DBC17F;
+}
+
+
+/* Clouds */
+.cloud.red {
+  fill: #825B5A;
+}
+
+.cloud.cream {
+  fill: #DBC17F;
+}
+
+.cloud.gray {
+  fill: #5D5A68;
+}
+
+.cloud {
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+
+.cloud.flip {
+  transform: transformY(-50%) rotateY(180deg);
+}
