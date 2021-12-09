@@ -50,7 +50,7 @@ export const Section = (props: SectionProps) => {
   return (
     <div>
       {Cloud("top", props.color, props.clouds)}
-      <div className={props.color + " section" + (props.nav ? " nav" : "")}>
+      <div className={props.color + " section" + (props.nav ? " nav" : " content")}>
         {props.children}
       </div>
       {Cloud("bottom", props.color, props.clouds)}

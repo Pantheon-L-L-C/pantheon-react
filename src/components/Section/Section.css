@@ -3,15 +3,22 @@
   border-style: none none solid none;
   border-width: 1px;
   border-color: white;
+  padding-right: 2vw;
+  padding-left: 2vw;
 }
 
 /* Sections */
-.section {
+.section.content {
+  box-sizing: border-box;
+  padding-right: 20vw;
+  padding-left: 20vw;
   width: 100vw;
-  padding-bottom: 5vh;
+  padding-bottom: 15vh;
+  padding-top: 5vh;
 }
 
 .section > h1 {
+  text-align: center;
   font-family: "Avenir Next", Sans-Serif;
 }
 

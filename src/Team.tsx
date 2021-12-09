@@ -43,7 +43,7 @@ const TEAM_MEMBERS = [
     photoPath: david
   },
   {
-    firstName: "UW Blockchain Society",
+    firstName: "UW BC Society",
     handle: "@UWBlockchain",
     title: "Dev Team",
     location: "Seattle",
