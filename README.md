@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# Pantheon React
+
+Port of [pantheonnft.com](https://pantheonnft.com) to React.JS.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+This project is built with TypeScript and React-Bootstrap with some heavy CSS overrides. 
+
+Please reach out to Avery Wagar (@ajmwagar) if you need assistance or have any questions.
 
 ## Available Scripts
 
