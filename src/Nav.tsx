@@ -5,7 +5,7 @@ import navbar_logo from './images/navbar_logo.png';
 
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
-import {Section, Color, Clouds} from './Section';
+import {Section, Color} from './Section';
 
 const Nav = () => {
   return (

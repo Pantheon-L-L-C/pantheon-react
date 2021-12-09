@@ -1,7 +1,6 @@
-import React from 'react';
 import './Faq.css';
 
-import {Section, Color, Clouds} from './Section';
+import {Section, Color} from './Section';
 
 const Faq = () => {
   return (

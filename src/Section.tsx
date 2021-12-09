@@ -21,15 +21,15 @@ interface SectionProps {
 }
 
 function shouldRender(pos: string, clouds?: Clouds) {
-  return clouds == Clouds.Both ||
-    (pos == "top" && clouds == Clouds.Top) ||
-    (pos == "bottom" && clouds == Clouds.Bottom);
+  return clouds === Clouds.Both ||
+    (pos === "top" && clouds === Clouds.Top) ||
+    (pos === "bottom" && clouds === Clouds.Bottom);
 }
 
 const Cloud = (pos: string, color: Color, clouds?: Clouds) => {
   let className = "cloud " + color;
 
-  if (pos == "bottom") {
+  if (pos === "bottom") {
     className += " flip";
   }
 

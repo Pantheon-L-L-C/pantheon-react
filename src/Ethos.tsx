@@ -8,7 +8,7 @@ import {Section, Color, Clouds} from './Section';
 const Ethos = () => {
   return (
     <Section color={Color["Red"]} clouds={Clouds.Top}>
-      <img src={ethos} />
+      <img alt="" src={ethos} />
 
       <h1>ETHOS</h1>
       <p>PANTHEON is a decentralized democratic community based around celestial personalities. We, as a community, are inspired by our simple motto:</p>
