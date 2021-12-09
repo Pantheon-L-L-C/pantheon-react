@@ -2,8 +2,15 @@ import React from 'react';
 import './Team.css';
 
 import {Section, Color, Clouds} from './components/Section/Section';
-import Carousel from './components/Carousel/Carousel';
-import { TeamBadge, TeamBadgeProps } from './components/TeamBadge/TeamBadge';
+import {TeamBadge, TeamBadgeProps} from './components/TeamBadge/TeamBadge';
+
+import Slider from 'infinite-react-carousel';
+
+import jack from './images/team/jack.png';
+import amir from './images/team/amir.png';
+import naadir from './images/team/naadir.png';
+import david from './images/team/david.png';
+import uwbcs from './images/team/uwbcs.png';
 
 const MEMBERS_SHOWN = 4;
 const TEAM_MEMBERS = [
@@ -12,51 +19,61 @@ const TEAM_MEMBERS = [
     handle: "@JackSimpson",
     title: "CEO & Crypto VC",
     location: "San Fransisco",
-    photoPath: "./images/team/jack.png"
+    photoPath: jack
   },
   {
     firstName: "Amir",
     handle: "@Amirskiii",
     title: "Marketing Team",
     location: "Phoenix",
-    photoPath: "./images/team/amir.png"
+    photoPath: amir
   },
   {
     firstName: "Naadir",
     handle: "@NFT_Naads",
     title: "Media Manager",
     location: "Houston",
-    photoPath: "./images/team/naadir.png"
+    photoPath: naadir
   },
   {
     firstName: "David",
     handle: "@casual.casual",
     title: "Painter & Ceramicist",
     location: "Bali",
-    photoPath: "./images/team/david.png"
+    photoPath: david
   },
   {
     firstName: "UW Blockchain Society",
     handle: "@UWBlockchain",
     title: "Dev Team",
     location: "Seattle",
-    photoPath: "./images/team/uwbcs.png"
+    photoPath: uwbcs
   },
 ];
 
-const teamMembersToBadges = (members: TeamBadgeProps[]) => { 
-  let jsx = members.forEach(member => {
-    console.log("Rendering - ", member);
-    return (<TeamBadge {...member}/>);
-  })
-  return jsx;
+const teamMembersToBadges = (members: TeamBadgeProps[]) => members.map(member => <div><TeamBadge handle={member.handle} photoPath={member.photoPath} firstName={member.firstName} location={member.location} title={member.title} /></div>);
+
+const sliderProps = {
+  slidesPerRow: 1,
+  slidesToShow: MEMBERS_SHOWN,
+  rows: 1,
+  autoplay: true,
+  overscan: 2
 }
 
 const Team = () => {
+  // Double the team
+  let team = teamMembersToBadges(TEAM_MEMBERS);
+  team.push(...team);
+  team.push(...team);
+  team.push(...team);
+
   return (
     <Section color={Color["Gray"]} clouds={Clouds.Both}>
       <h1>TEAM</h1>
-      {teamMembersToBadges(TEAM_MEMBERS)}
+      <Slider {...sliderProps}>
+        {team}
+      </Slider>
     </Section>
   );
 }

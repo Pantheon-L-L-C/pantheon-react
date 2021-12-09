@@ -12,9 +12,17 @@ export interface TeamBadgeProps {
 export const TeamBadge = (props: TeamBadgeProps) => {
   const {photoPath, firstName, handle, title, location} = props;
 
+  console.log("Props", props);
+
   return (
-    <div>
-      <img alt={firstName} src={photoPath} />
+    <div className="badge">
+      <img 
+        className="badge-photo"
+        alt={firstName} 
+        height="300"
+        width="300"
+        src={photoPath}
+      />
       <h1>{firstName}</h1>
       <p>{handle}</p>
       <h2>{title}</h2>

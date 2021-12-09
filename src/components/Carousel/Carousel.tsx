@@ -58,7 +58,6 @@ const Carousel = (props: any) => {
       <div className="carousel-wrapper">
         {/* You can alwas change the content of the button to other things */}
         {
-          currentIndex > 0 &&
           <button onClick={prev} className="left-arrow">
             &lt;
           </button>
@@ -77,7 +76,6 @@ const Carousel = (props: any) => {
         </div>
         {/* You can alwas change the content of the button to other things */}
         {
-          currentIndex < (length - show) &&
           <button onClick={next} className="right-arrow">
             &gt;
           </button>
