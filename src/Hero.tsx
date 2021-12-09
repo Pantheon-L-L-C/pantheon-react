@@ -3,7 +3,7 @@ import './Hero.css';
 
 import hero from './images/hero.png';
 
-import {Section, Color} from './Section';
+import {Section, Color} from './components/Section/Section';
 
 const Hero = () => {
   return (

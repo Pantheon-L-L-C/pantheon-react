@@ -3,7 +3,7 @@ import './Ethos.css';
 
 import ethos from './images/ethos.png';
 
-import {Section, Color, Clouds} from './Section';
+import {Section, Color, Clouds} from './components/Section/Section';
 
 const Ethos = () => {
   return (

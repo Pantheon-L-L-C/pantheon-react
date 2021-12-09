@@ -1,7 +1,7 @@
 import React from 'react';
 import './WhitelistInfo.css';
 
-import {Section, Color, Clouds} from './Section';
+import {Section, Color, Clouds} from './components/Section/Section';
 
 const WhitelistInfo = () => {
   return (

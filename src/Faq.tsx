@@ -1,6 +1,6 @@
 import './Faq.css';
 
-import {Section, Color} from './Section';
+import {Section, Color} from './components/Section/Section';
 
 const Faq = () => {
   return (
