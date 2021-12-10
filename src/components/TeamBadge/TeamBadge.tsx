@@ -19,8 +19,6 @@ export const TeamBadge = (props: TeamBadgeProps) => {
       <img 
         className="badge-photo"
         alt={firstName} 
-        height="300"
-        width="300"
         src={photoPath}
       />
       <h1>{firstName}</h1>
