@@ -33,7 +33,7 @@ const faqToEntries = () => {
   return FAQ_ENTRIES.map(faq => {
     return (
       <div className="faq-entry">
-        <h2>{faq.title}</h2>
+        <h3>{faq.title}</h3>
         <div dangerouslySetInnerHTML={{__html: faq.value}} />
       </div>
     );

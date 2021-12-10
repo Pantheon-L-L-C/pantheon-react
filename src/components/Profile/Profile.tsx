@@ -5,16 +5,17 @@ export interface ProfileProps {
   photoPath: string
   flip?: boolean
   children: React.ReactNode
+  small?: boolean
 }
 
 export const Profile = (props: ProfileProps) => {
-  const {photoPath, flip, children} = props;
+  const {photoPath, flip, children, small} = props;
 
   return (
     <div className={"profile" + (flip ? " flip-profile" : "")}>
       <div className="profile-photo-container">
         <img
-          className="profile-photo"
+          className={"profile-photo" + (small ? " small" : "")}
           alt=""
           src={photoPath}
         />

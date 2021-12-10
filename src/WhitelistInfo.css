@@ -1,0 +1,24 @@
+.whitelist {
+  text-align: center;
+  padding-bottom: 5vh;
+}
+.whitelist-section-container {
+  padding-top: 3vh;
+}
+
+.whitelist-section {
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+
+  margin-left: 7vw;
+  margin-right: 7vw;
+  margin-bottom: 3vh;
+
+  color: white;
+  text-align: center;
+}
+
+.section-content {
+  color: #dac07e;
+}
