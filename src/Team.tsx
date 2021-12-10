@@ -58,7 +58,9 @@ const sliderProps = {
   slidesToShow: MEMBERS_SHOWN,
   rows: 1,
   autoplay: true,
-  overscan: 2
+  overscan: 1,
+  adaptiveHeight: true,
+  centerPadding: 60,
 }
 
 const Team = () => {

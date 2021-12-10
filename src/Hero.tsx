@@ -4,13 +4,15 @@ import './Hero.css';
 import hero from './images/hero.png';
 
 import {Section, Color} from './components/Section/Section';
+import Profile from './components/Profile/Profile';
 
 const Hero = () => {
   return (
     <Section color={Color["Cream"]}>
-      <img alt="" src={hero}/>
-      <h1>JOIN THE PANTHEON</h1>
-      <p>Mystery often surrounds the accuracy of mythology, exemplifying gods as perfect idols in our human space, but these idols have a story… an origin…</p>
+      <Profile photoPath={hero}>
+        <h1>JOIN THE PANTHEON</h1>
+        <p>Mystery often surrounds the accuracy of mythology, exemplifying gods as perfect idols in our human space, but these idols have a story… an origin…</p>
+      </Profile>
     </Section>
   );
 }

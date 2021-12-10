@@ -1,0 +1,20 @@
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.flip {
+  flex-direction: row-reverse;
+}
+
+.profile-content {
+  position: relative;
+  width: 25vw;
+}
+
+.profile-photo {
+  position: relative;
+  height: auto;
+  width: 30vw;
+}

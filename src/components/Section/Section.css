@@ -7,13 +7,15 @@
   padding-left: 2vw;
 }
 
+.section {
+  position: relative;
+  display: block;
+}
+
 /* Sections */
 .section.content {
-  box-sizing: border-box;
   padding-right: 20vw;
   padding-left: 20vw;
-  width: 100vw;
-  padding-bottom: 15vh;
   padding-top: 5vh;
 }
 
@@ -39,6 +41,11 @@
 
 
 /* Clouds */
+.cloud-container {
+  display: inline;
+  position: relative;
+}
+
 .cloud.red {
   fill: #825B5A;
 }
@@ -52,12 +59,25 @@
 }
 
 .cloud {
-  display: block;
-  position: relative;
   z-index: 2;
 }
 
-
-.cloud.flip {
-  transform: transformY(-50%) rotateY(180deg);
+.cloud.top {
 }
+
+.cloud.bottom {
+}
+
+svg.bottom.flip {
+  transform: translateX(0%) rotateX(180deg) rotateY(180deg);
+}
+
+svg.flip {
+  transform: translateX(0%) rotateY(180deg);
+}
+
+svg.bottom {
+  transform: translateX(0%) rotateX(180deg);
+}
+
+

@@ -12,8 +12,6 @@ export interface TeamBadgeProps {
 export const TeamBadge = (props: TeamBadgeProps) => {
   const {photoPath, firstName, handle, title, location} = props;
 
-  console.log("Props", props);
-
   return (
     <div className="badge">
       <img 
