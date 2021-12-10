@@ -7,16 +7,18 @@
   padding-left: 2vw;
 }
 
-.section {
-  position: relative;
-  display: block;
+/* Sections */
+.section-container {
 }
 
-/* Sections */
 .section.content {
   padding-right: 20vw;
   padding-left: 20vw;
-  padding-top: 5vh;
+}
+
+.section.content.pad {
+  padding-top: 15vh;
+  padding-bottom: 15vh;
 }
 
 .section > h1 {
@@ -42,8 +44,18 @@
 
 /* Clouds */
 .cloud-container {
-  display: inline;
   position: relative;
+}
+
+.cloud-container.top {
+  top: -14vh;
+}
+
+.cloud-container.bottom {
+  bottom: -14vh;
+}
+
+.cloud {
 }
 
 .cloud.red {
@@ -58,26 +70,23 @@
   fill: #5D5A68;
 }
 
-.cloud {
-  z-index: 2;
-}
 
-.cloud.top {
-}
-
-.cloud.bottom {
-}
-
-svg.bottom.flip {
-  transform: translateX(0%) rotateX(180deg) rotateY(180deg);
+svg {
+  width: 100vw;
 }
 
 svg.flip {
-  transform: translateX(0%) rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+svg.bottom.flip {
+  transform: rotateX(180deg) rotateY(180deg);
 }
 
 svg.bottom {
-  transform: translateX(0%) rotateX(180deg);
+  transform: rotateX(180deg);
 }
+
+
 
 

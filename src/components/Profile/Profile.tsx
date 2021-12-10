@@ -11,7 +11,7 @@ export const Profile = (props: ProfileProps) => {
   const {photoPath, flip, children} = props;
 
   return (
-    <div className={"profile" + (flip ? " flip" : "")}>
+    <div className={"profile" + (flip ? " flip-profile" : "")}>
       <div className="profile-photo-container">
         <img
           className="profile-photo"

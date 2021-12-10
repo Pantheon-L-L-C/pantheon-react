@@ -4,7 +4,7 @@
   flex-direction: row;
 }
 
-.flip {
+.flip-profile {
   flex-direction: row-reverse;
 }
 

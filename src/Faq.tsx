@@ -52,7 +52,7 @@ const FaqBox = () => {
 
 const Faq = () => {
   return (
-    <Section color={Color["Cream"]} >
+    <Section color={Color["Cream"]} pad={true}>
       <FaqBox />
     </Section>
   );
